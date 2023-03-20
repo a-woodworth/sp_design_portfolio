@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link href="styles.css" rel="stylesheet">
     
     <title>Frontend Mentor | Single-page design portfolio</title>
   </head>
@@ -21,30 +22,36 @@
       </div>
     </header>
     <main>
-      <section class="skills container" aria-label="skills">
-        <h2 class="skills__title">Design solutions made easy</h2>
-        <p class="skills__sub-heading">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
-        <p class="icon__heading skills-featured">Graphic Design</p>
-        <div class="skills-group-1">
-          <p class="icon__heading span-1">UI/UX</p>
-          <p class="icon__heading span-1">Apps</p>
-          <p class="icon__heading span-2">Photography</p>
-        </div>
-        <div class="skills-group-2">
-          <p class="icon__heading span-2">Illustrations</p>
-          <p class="icon__heading span-2">Motion Graphics</p>
-        </div>
-      </section>
-      <section class="bio container" aria-label="biography">
-        <img src="assets/image-amy.webp" alt="Headshot of Amy Whatshername">
-        <div class="bio-wrapper">
-          <h2 class="bio__title">I’m Amy, and I’d love to work on your next project</h2>
-          <p class="bio__subheading">
-            I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!
-          </p>
-          <a href="#" class="btn btn--secondary">Free Consultation</a>
-        </div>
-      </section>
+      <div class="container">
+        <section class="skills" aria-label="skills">
+          <div class="skills__header">
+            <h2 class="skills__title">Design solutions made easy</h2>
+            <p class="skills__sub-heading">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+          </div>
+          <div class="skills-featured">
+            <p class="icon__heading">Graphic Design</p>
+          </div>
+          <div class="skills-group-1">
+            <p class="icon__heading span-1">UI/UX</p>
+            <p class="icon__heading span-1">Apps</p>
+            <p class="icon__heading span-2">Photography</p>
+          </div>
+          <div class="skills-group-2">
+            <p class="icon__heading span-2">Illustrations</p>
+            <p class="icon__heading span-2">Motion Graphics</p>
+          </div>
+        </section>
+        <section class="bio" aria-label="biography">
+          <img src="assets/image-amy.webp" alt="Headshot of Amy Whatshername">
+          <div class="bio-wrapper">
+            <h2 class="bio__title">I’m Amy, and I’d love to work on your next project</h2>
+            <p class="bio__subheading">
+              I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!
+            </p>
+            <a href="#" class="btn btn--secondary">Free Consultation</a>
+          </div>
+        </section>
+      </div>
       <section class="portfolio full-bleed" aria-label="portfolio">
         <h2 class="portfolio__title">My Work</h2>
         <div class="carousel">

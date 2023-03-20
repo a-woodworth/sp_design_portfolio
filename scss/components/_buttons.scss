@@ -1,0 +1,11 @@
+// ___________________________________________________________________
+// Button Styles
+// ___________________________________________________________________
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: var(--font-weight--bold);
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}

@@ -1,0 +1,82 @@
+:root {
+  --primary-color: hsl(0 0% 1%);
+  --secondary-color: hsl(0 0% 100%);
+  --tertiary-color: hsl(30 5% 45%);
+  --bg-blue: hsl(252 66% 62%);
+  --bg-cream: hsl(28 100% 97%);
+  --bg-green: hsl(172 46% 57%);
+  --bg-orange: hsl(28 89% 67%);
+  --bg-pink: hsl(0 78% 79%);
+  --bg-purple: hsl(314 45% 23%);
+  --bg-red: hsl(7 77% 66%);
+  --font-weight--bold: 700;
+  --font-weight--regular: 500;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-cream);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: var(--font-weight--regular);
+  line-height: 1.4;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sr-only {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: var(--font-weight--bold);
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+
+.container {
+  padding-inline: 1rem;
+}
+
+.skills-featured {
+  background-color: var(--bg-blue);
+  background-image: url("assets/pattern-graphic-design.svg");
+  background-position: top 1.5rem right 1.5rem;
+  background-repeat: no-repeat;
+  padding: 1.5rem;
+}
+.skills-featured .icon__heading {
+  padding-top: 19.375rem;
+}

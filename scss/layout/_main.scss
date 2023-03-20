@@ -1,0 +1,15 @@
+// ___________________________________________________________________
+// Main Styles
+// ___________________________________________________________________
+
+.skills-featured {
+  background-color: var(--bg-blue);
+  background-image: url('assets/pattern-graphic-design.svg');
+  background-position: top 1.5rem right 1.5rem;
+  background-repeat: no-repeat;
+  padding: 1.5rem;
+
+  .icon__heading {
+    padding-top: 19.375rem;
+  }
+}
