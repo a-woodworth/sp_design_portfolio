@@ -1,45 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Single-page design portfolio</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single-page design portfolio</title>
-</head>
-<body>
-
-  Free Consultation
-
-  Design solutions made easy
-
-  With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
-
-  Graphic Design
-  UI/UX
-  Apps
-  Photography
-  Illustrations
-  Motion Graphics
-
-  I’m Amy, and I’d love to work on your next project
-
-  I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
-  to complete mobile apps. I’m also handy with a camera!
-
-  Free Consultation
-
-  My Work
-
-  Book a call with me
-
-  I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
-  free consultation. Then we can move forward from there.
-
-  Free Consultation
-
-  Free Consultation
-
-</body>
+  <body>
+    <header>
+      <div class="main-header container">
+        <h1 class="sr-only">Freelance designer for hire - Amy Whatshername</h1>
+        <img class="logo" src="assets/logo.svg" alt="AW Design logo.">
+        <a href="#" class="btn btn--primary">Free Consultation</a>
+      </div>
+    </header>
+    <main>
+      <section class="skills container" aria-label="skills">
+        <h2 class="skills__title">Design solutions made easy</h2>
+        <p class="skills__sub-heading">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+        <p class="icon__heading skills-featured">Graphic Design</p>
+        <div class="skills-group-1">
+          <p class="icon__heading span-1">UI/UX</p>
+          <p class="icon__heading span-1">Apps</p>
+          <p class="icon__heading span-2">Photography</p>
+        </div>
+        <div class="skills-group-2">
+          <p class="icon__heading span-2">Illustrations</p>
+          <p class="icon__heading span-2">Motion Graphics</p>
+        </div>
+      </section>
+      <section class="bio container" aria-label="biography">
+        <img src="assets/image-amy.webp" alt="Headshot of Amy Whatshername">
+        <div class="bio-wrapper">
+          <h2 class="bio__title">I’m Amy, and I’d love to work on your next project</h2>
+          <p class="bio__subheading">
+            I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!
+          </p>
+          <a href="#" class="btn btn--secondary">Free Consultation</a>
+        </div>
+      </section>
+      <section class="portfolio full-bleed" aria-label="portfolio">
+        <h2 class="portfolio__title">My Work</h2>
+        <div class="carousel">
+          <ul class="portfolio__list">
+            <li>
+              <img src="assets/image-slide-1.jpg" alt="Motion graphics - Artistic snowflake floating on blue background">
+            </li>
+            <li>
+              <img src="assets/image-slide-2.jpg" alt="Illustrations - Circular shapes on purple background">
+            </li>
+            <li>
+              <img src="assets/image-slide-3.jpg" alt="Graphic design - Newsletter with multi-color logo">
+            </li>
+            <li>
+              <img src="assets/image-slide-4.jpg" alt="Photography - Books stacked on old vinyl records">
+            </li>
+            <li>
+              <img src="assets/image-slide-5.jpg" alt="Apps - iPhone displaying Ben Kolde website">
+            </li>
+          </ul>
+          <button class="btn btn--primary btn--carousel" type="button" aria-label="previous image">
+            <img aria-hidden="true" src="assets/icon-arrow-left.svg" alt="">
+          </button>
+          <button class="btn btn--primary btn--carousel" type="button" aria-label="next image">
+            <img aria-hidden="true" src="assets/icon-arrow-right.svg" alt="">
+          </button>
+        </div>
+      </section>
+      <section class="contact container" aria-label="contact">
+        <h2 class="contact__heading">Book a call with me</h2>
+        <p class="contact_subheading">
+          I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.
+        </p>
+        <a href="#" class="btn btn--secondary">Free Consultation</a>
+      </section>
+    </main>
+    <footer>
+      <div class="main-footer container">
+        <img class="logo" src="assets/logo.svg" alt="AW Design logo.">
+        <a href="#" class="btn btn--primary">Free Consultation</a>
+      </div>
+    </footer>
+  </body>
 </html>
