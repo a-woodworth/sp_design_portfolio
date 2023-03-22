@@ -3,5 +3,27 @@
 // ___________________________________________________________________
 
 .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin-inline: auto;
+  max-width: 69.375rem;
   padding-inline: 1rem;
+}
+
+// Skills Section
+.skills__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+
+  @media (min-width: 43.125rem) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 69.375rem) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
