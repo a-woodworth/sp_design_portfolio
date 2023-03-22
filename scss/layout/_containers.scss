@@ -9,6 +9,10 @@
   margin-inline: auto;
   max-width: 69.375rem;
   padding-inline: 1rem;
+
+  @media (min-width: 43.125rem) {
+    padding-inline: 2.5rem;
+  }
 }
 
 // Skills Section

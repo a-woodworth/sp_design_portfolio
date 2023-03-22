@@ -10,6 +10,16 @@
     font-size: 2.25rem;
     margin-bottom: 1rem;
     text-align: center;
+
+    @media (min-width: 43.125rem) {
+      font-size: 2.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    @media (min-width: 69.375rem) {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   p {
@@ -18,6 +28,20 @@
     line-height: 1.6;
     padding-inline: 1.75rem;
     text-align: center;
+
+    @media (min-width: 43.125rem) {
+      font-size: 1.125rem;
+    }
+  }
+
+  @media (min-width: 43.125rem) {
+    margin: 0 auto 4rem;
+    max-width: 43.125rem;
+  }
+
+  @media (min-width: 69.375rem) {
+    margin: 0 auto 5rem;
+    max-width: 47rem;
   }
 }
 
