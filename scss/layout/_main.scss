@@ -160,3 +160,73 @@
     grid-column: 5 / span 2;
   }
 }
+
+// Bio
+.bio img {
+  height: 18.75rem;
+  width: 18.75rem;
+
+  @media (min-width: 43.125rem) {
+    height: 22.75rem;
+    width: 22.75rem;
+    margin-left: -2.75rem;
+  }
+
+  @media (min-width: 69.375rem) {
+    height: 27.8125rem;
+    width: 27.8125rem;
+    margin-left: 0;
+  }
+}
+
+.bio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 33.75rem;
+  padding: 0 1rem 0 1rem;
+
+  h2 {
+    color: var(--primary-color);
+    font-size: 1.625rem;
+    padding-top: 2.5rem;
+
+    @media (min-width: 43.125rem) {
+      font-size: 2rem;
+      padding-top: 0;
+    }
+
+    @media (min-width: 69.375rem) {
+      font-size: 2.5rem;
+    }
+  }
+
+  p {
+    color: var(--tertiary-color);
+    font-size: 1rem;
+    line-height: 1.6;
+
+    @media (min-width: 43.125rem) {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      padding-top: 0;
+    }
+  }
+
+  .btn {
+    margin: auto;
+
+    @media (min-width: 43.125rem) {
+      align-self: flex-start;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 43.125rem) {
+    padding: 0 2.5rem 0 0;
+  }
+
+  @media (min-width: 69.375rem)  {
+    padding: 0;
+  }
+}

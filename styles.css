@@ -105,6 +105,11 @@ a {
     padding-inline: 2.5rem;
   }
 }
+@media (min-width: 69.375rem) {
+  .container {
+    padding-inline: 0;
+  }
+}
 
 .skills__grid {
   display: grid;
@@ -121,6 +126,31 @@ a {
 @media (min-width: 69.375rem) {
   .skills__grid {
     grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.bio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  max-width: 69.375rem;
+  padding: 6.25rem 0;
+  text-align: center;
+}
+@media (min-width: 43.125rem) {
+  .bio {
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    text-align: left;
+  }
+}
+@media (min-width: 69.375rem) {
+  .bio {
+    margin: auto;
+    grid-template-columns: 27.8125rem 1fr;
+    column-gap: 7.8125rem;
   }
 }
 
@@ -307,5 +337,79 @@ a {
   .icon-6 {
     padding-top: 6.5rem;
     grid-column: 5/span 2;
+  }
+}
+
+.bio img {
+  height: 18.75rem;
+  width: 18.75rem;
+}
+@media (min-width: 43.125rem) {
+  .bio img {
+    height: 22.75rem;
+    width: 22.75rem;
+    margin-left: -2.75rem;
+  }
+}
+@media (min-width: 69.375rem) {
+  .bio img {
+    height: 27.8125rem;
+    width: 27.8125rem;
+    margin-left: 0;
+  }
+}
+
+.bio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 33.75rem;
+  padding: 0 1rem 0 1rem;
+}
+.bio-content h2 {
+  color: var(--primary-color);
+  font-size: 1.625rem;
+  padding-top: 2.5rem;
+}
+@media (min-width: 43.125rem) {
+  .bio-content h2 {
+    font-size: 2rem;
+    padding-top: 0;
+  }
+}
+@media (min-width: 69.375rem) {
+  .bio-content h2 {
+    font-size: 2.5rem;
+  }
+}
+.bio-content p {
+  color: var(--tertiary-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+@media (min-width: 43.125rem) {
+  .bio-content p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    padding-top: 0;
+  }
+}
+.bio-content .btn {
+  margin: auto;
+}
+@media (min-width: 43.125rem) {
+  .bio-content .btn {
+    align-self: flex-start;
+    margin: 0;
+  }
+}
+@media (min-width: 43.125rem) {
+  .bio-content {
+    padding: 0 2.5rem 0 0;
+  }
+}
+@media (min-width: 69.375rem) {
+  .bio-content {
+    padding: 0;
   }
 }

@@ -13,6 +13,10 @@
   @media (min-width: 43.125rem) {
     padding-inline: 2.5rem;
   }
+
+  @media (min-width: 69.375rem) {
+    padding-inline: 0;
+  }
 }
 
 // Skills Section
@@ -29,5 +33,29 @@
 
   @media (min-width: 69.375rem) {
     grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+// Bio Section 
+.bio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  max-width: 69.375rem;
+  padding: 6.25rem 0;
+  text-align: center;
+
+  @media (min-width: 43.125rem) {
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    text-align: left;
+  }
+
+  @media (min-width: 69.375rem) {
+    margin: auto;
+    grid-template-columns: 27.8125rem 1fr;
+    column-gap: 7.8125rem;
   }
 }
