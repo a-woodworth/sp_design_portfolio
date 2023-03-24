@@ -430,6 +430,11 @@ nav ul {
 .contact-content h2 {
   font-size: 1.625rem;
 }
+@media (min-width: 43.125rem) {
+  .contact-content h2 {
+    font-size: 2rem;
+  }
+}
 .contact-content p {
   line-height: 1.6;
   text-align: center;

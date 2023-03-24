@@ -244,6 +244,10 @@
 
   h2 {
     font-size: 1.625rem;
+
+    @media (min-width: 43.125rem) {
+      font-size: 2rem;
+    }
   }
 
   p {
