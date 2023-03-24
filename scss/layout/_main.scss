@@ -208,7 +208,6 @@
 
     @media (min-width: 43.125rem) {
       font-size: 1.125rem;
-      line-height: 1.6;
       padding-top: 0;
     }
   }
@@ -228,5 +227,23 @@
 
   @media (min-width: 69.375rem)  {
     padding: 0;
+  }
+}
+
+// Contact Section
+.contact-content {
+  background-color: var(--primary-color);
+  border-radius: 0.625rem;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1.5rem;
+
+  p {
+    line-height: 1.6;
+    text-align: center;
   }
 }

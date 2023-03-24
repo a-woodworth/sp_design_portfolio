@@ -16,14 +16,16 @@
   <body>
     <header>
       <div class="main-header container">
-        <h1 class="sr-only">Amy Whatshername - Freelance graphic and web designer for hire - Amy Whatshername</h1>
-        <a href="./index.html" aria-label="Graphic Designer Amy Whatshername homepage">
-          <img class="logo" src="assets/logo.svg" alt="AW Design. Click for home page.">
-        </a>
-        <a href="#" class="btn btn--primary">Free Consultation</a>
+        <nav aria-label="primary navigation">
+          <ul>
+            <li><a href="#"><img class="logo" src="assets/logo.svg" alt="AW Design. Click for home."></a></li>
+            <li><a href="#" class="btn btn--primary">Free Consultation</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
+      <h1 class="sr-only">Amy Whatshername - Freelance graphic and web designer for hire</h1>
       <section class="skills container" aria-label="skills">
         <div class="skills__header">
           <h2 class="skills__title">Design solutions made easy</h2>
@@ -95,17 +97,23 @@
         </div>
       </section>
       <section class="contact container" aria-label="contact">
-        <h2 class="contact__heading">Book a call with me</h2>
-        <p class="contact_subheading">
-          I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.
-        </p>
-        <a href="#" class="btn btn--secondary">Free Consultation</a>
+        <div class="contact-content">
+          <h2 class="contact__heading">Book a call with me</h2>
+          <p class="contact_subheading">
+            I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.
+          </p>
+          <a href="#" class="btn btn--secondary">Free Consultation</a>
+        </div>
       </section>
     </main>
     <footer>
       <div class="main-footer container">
-        <img class="logo" src="assets/logo.svg" alt="">
-        <a href="#" class="btn btn--primary">Free Consultation</a>
+        <nav aria-label="primary navigation">
+          <ul>
+            <li><a href="#"><img class="logo" src="assets/logo.svg" alt="AW Design. Click for home."></a></li>
+            <li><a href="#" class="btn btn--primary">Free Consultation</a></li>
+          </ul>
+        </nav>
       </div>
     </footer>
   </body>

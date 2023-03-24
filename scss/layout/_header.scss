@@ -2,10 +2,13 @@
 // Header Styles
 // ___________________________________________________________________
 
-.main-header {
+nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.main-header {
   padding-top: 1rem;
   padding-bottom: 2rem;
 
