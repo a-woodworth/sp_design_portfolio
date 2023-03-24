@@ -427,6 +427,9 @@ nav ul {
   align-items: center;
   padding: 3rem 1.5rem;
 }
+.contact-content h2 {
+  font-size: 1.625rem;
+}
 .contact-content p {
   line-height: 1.6;
   text-align: center;
