@@ -92,6 +92,13 @@ a {
   background-color: var(--bg-orange);
 }
 
+.btn--carousel {
+  border-radius: 50%;
+  height: 4rem;
+  padding: 1.5rem;
+  width: 4rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -152,6 +159,12 @@ a {
     grid-template-columns: 27.8125rem 1fr;
     column-gap: 7.8125rem;
   }
+}
+
+.carousel-scroll-container {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
 }
 
 nav ul {
@@ -414,6 +427,50 @@ nav ul {
   .bio-content {
     padding: 0;
   }
+}
+
+.portfolio__title {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight--bold);
+  text-align: center;
+}
+
+.carousel-media {
+  --gap: 0.9375rem;
+  display: flex;
+  gap: var(--gap);
+  padding-top: 2rem;
+}
+.carousel-media li {
+  flex-shrink: 0;
+  height: 11.25rem;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+.carousel-media li:first-child {
+  scroll-snap-align: start;
+  padding-left: 2.75rem;
+}
+.carousel-media li:last-child {
+  scroll-snap-align: end;
+  padding-right: 2.75rem;
+}
+.carousel-media img {
+  border-radius: 0.625rem;
+  height: 100%;
+  width: auto;
+}
+
+.carousel-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.contact {
+  padding-top: 6.25rem;
 }
 
 .contact-content {

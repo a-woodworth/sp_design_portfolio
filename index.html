@@ -70,28 +70,36 @@
       </section>
       <section class="portfolio full-bleed" aria-label="portfolio">
         <h2 class="portfolio__title">My Work</h2>
-        <div class="carousel">
-          <ul class="portfolio__list">
-            <li>
+        <div class="carousel-scroll-container" role="region" aria-label="Image carousel" tabindex="0">
+          <ul class="carousel-media" role="list">
+            <li class="carousel-item">
               <img src="assets/image-slide-1.jpg" alt="Motion graphics - Artistic snowflake floating on blue background">
             </li>
-            <li>
+            <li class="carousel-item">
               <img src="assets/image-slide-2.jpg" alt="Illustrations - Circular shapes on purple background">
             </li>
-            <li>
+            <li class="carousel-item">
               <img src="assets/image-slide-3.jpg" alt="Graphic design - Newsletter with multi-color logo">
             </li>
-            <li>
+            <li class="carousel-item">
               <img src="assets/image-slide-4.jpg" alt="Photography - Books stacked on old vinyl records">
             </li>
-            <li>
+            <li class="carousel-item">
               <img src="assets/image-slide-5.jpg" alt="Apps - iPhone displaying Ben Kolde website">
             </li>
           </ul>
-          <button class="btn btn--primary btn--carousel" type="button" aria-label="previous image">
+        </div>
+        <div class="carousel-btns" aria-label="Carousel navigation controls">
+          <button class="btn btn--primary btn--carousel" 
+            type="button" 
+            aria-label="Previous"
+            data-direction="start">
             <img aria-hidden="true" src="assets/icon-arrow-left.svg" alt="">
           </button>
-          <button class="btn btn--primary btn--carousel" type="button" aria-label="next image">
+          <button class="btn btn--primary btn--carousel" 
+            type="button" 
+            aria-label="Next"
+            data-direction="end">
             <img aria-hidden="true" src="assets/icon-arrow-right.svg" alt="">
           </button>
         </div>

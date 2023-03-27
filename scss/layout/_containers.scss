@@ -59,3 +59,10 @@
     column-gap: 7.8125rem;
   }
 }
+
+// Porfolio - Carousel
+.carousel-scroll-container {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+}
