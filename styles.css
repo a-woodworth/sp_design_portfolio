@@ -63,6 +63,7 @@ a {
   border-radius: 28px;
   color: var(--secondary-color);
   cursor: pointer;
+  display: block;
   font-size: 0.875rem;
   font-weight: var(--font-weight--bold);
   line-height: 2;
@@ -434,11 +435,15 @@ nav ul {
   font-weight: var(--font-weight--bold);
   text-align: center;
 }
+@media (min-width: 43.125rem) {
+  .portfolio__title {
+    font-size: 2rem;
+  }
+}
 
 .carousel-media {
-  --gap: 0.9375rem;
   display: flex;
-  gap: var(--gap);
+  gap: 0.9375rem;
   padding-top: 2rem;
 }
 .carousel-media li {
@@ -455,10 +460,21 @@ nav ul {
   scroll-snap-align: end;
   padding-right: 2.75rem;
 }
+@media (min-width: 43.125rem) {
+  .carousel-media li {
+    height: 22.5rem;
+  }
+}
 .carousel-media img {
   border-radius: 0.625rem;
   height: 100%;
   width: auto;
+}
+@media (min-width: 43.125rem) {
+  .carousel-media {
+    gap: 1.875rem;
+    padding-top: 3.5rem;
+  }
 }
 
 .carousel-btns {
@@ -467,6 +483,11 @@ nav ul {
   justify-content: center;
   gap: 1rem;
   padding-top: 2rem;
+}
+@media (min-width: 43.125rem) {
+  .carousel-btns {
+    padding-top: 3.5rem;
+  }
 }
 
 .contact {
@@ -482,19 +503,59 @@ nav ul {
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
+  max-width: 69.375rem;
   padding: 3rem 1.5rem;
 }
 .contact-content h2 {
   font-size: 1.625rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 @media (min-width: 43.125rem) {
   .contact-content h2 {
     font-size: 2rem;
+    margin-bottom: 1.625rem;
+  }
+}
+@media (min-width: 69.375rem) {
+  .contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
   }
 }
 .contact-content p {
+  font-size: 1rem;
   line-height: 1.6;
   text-align: center;
+}
+@media (min-width: 43.125rem) {
+  .contact-content p {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 69.375rem) {
+  .contact-content p {
+    text-align: left;
+  }
+}
+@media (min-width: 69.375rem) {
+  .contact-content .contact__heading-wrapper {
+    flex-basis: 58%;
+  }
+}
+@media (min-width: 43.125rem) {
+  .contact-content {
+    gap: 1.625rem;
+    padding: 3.5rem 4.6875rem;
+  }
+}
+@media (min-width: 69.375rem) {
+  .contact-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4.0625rem 5rem;
+  }
 }
 
 .main-footer {

@@ -235,12 +235,15 @@
   font-size: 1.5rem;
   font-weight: var(--font-weight--bold);
   text-align: center;
+
+  @media (min-width: 43.125rem) {
+    font-size: 2rem;
+  }
 }
 
 .carousel-media {
-  --gap: 0.9375rem;
   display: flex;
-  gap: var(--gap);
+  gap: 0.9375rem;
   padding-top: 2rem;
 
   li {
@@ -258,12 +261,21 @@
       scroll-snap-align: end;
       padding-right: 2.75rem;
     }
+
+    @media (min-width: 43.125rem) {
+      height: 22.5rem;
+    }
   }
 
   img {
     border-radius: 0.625rem;
     height: 100%;
     width: auto;
+  }
+
+  @media (min-width: 43.125rem) {
+    gap: 1.875rem;
+    padding-top: 3.5rem;
   }
 }
 
@@ -273,6 +285,10 @@
   justify-content: center;
   gap: 1rem;
   padding-top: 2rem;
+
+  @media (min-width: 43.125rem) {
+    padding-top: 3.5rem;
+  }
 }
 
 // Contact Section
@@ -289,18 +305,54 @@
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
+  max-width: 69.375rem;
   padding: 3rem 1.5rem;
 
   h2 {
     font-size: 1.625rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 
     @media (min-width: 43.125rem) {
       font-size: 2rem;
+      margin-bottom: 1.625rem;
+    }
+
+    @media (min-width: 69.375rem) {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-align: left;
     }
   }
 
   p {
+    font-size: 1rem;
     line-height: 1.6;
     text-align: center;
+
+    @media (min-width: 43.125rem) {
+      font-size: 1.125rem;
+    }
+
+    @media (min-width: 69.375rem) {
+      text-align: left;
+    }
+  }
+
+  .contact__heading-wrapper {
+    @media (min-width: 69.375rem) {
+      flex-basis: 58%;
+    }
+  }
+
+  @media (min-width: 43.125rem) {
+    gap: 1.625rem;
+    padding: 3.5rem 4.6875rem;
+  }
+
+  @media (min-width: 69.375rem)  {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4.0625rem 5rem;
   }
 }
