@@ -88,12 +88,13 @@ a {
 
 .btn--secondary {
   background-color: var(--bg-red);
+  color: var(--primary-color);
 }
 .btn--secondary:hover {
   background-color: var(--bg-orange);
 }
 
-.btn--carousel {
+.btn--gallery {
   border-radius: 50%;
   height: 4rem;
   padding: 1.5rem;
@@ -162,10 +163,14 @@ a {
   }
 }
 
-.carousel-scroll-container {
+.gallery {
+  overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  overflow-x: auto;
+  scrollbar-width: none;
+}
+.gallery::-webkit-scrollbar {
+  width: 0;
 }
 
 nav ul {
@@ -441,52 +446,52 @@ nav ul {
   }
 }
 
-.carousel-media {
+.gallery-images {
+  --gap: 0.9375rem;
   display: flex;
-  gap: 0.9375rem;
-  padding-top: 2rem;
+  gap: var(--gap);
+  justify-content: center;
+  padding: 2rem 0 1.5rem 0;
+  transition: all 0.3s;
 }
-.carousel-media li {
+.gallery-images div {
+  border-radius: 0.625rem;
   flex-shrink: 0;
   height: 11.25rem;
   scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
-.carousel-media li:first-child {
-  scroll-snap-align: start;
-  padding-left: 2.75rem;
-}
-.carousel-media li:last-child {
-  scroll-snap-align: end;
-  padding-right: 2.75rem;
 }
 @media (min-width: 43.125rem) {
-  .carousel-media li {
+  .gallery-images div {
     height: 22.5rem;
   }
 }
-.carousel-media img {
+.gallery-images img {
   border-radius: 0.625rem;
   height: 100%;
   width: auto;
 }
 @media (min-width: 43.125rem) {
-  .carousel-media {
-    gap: 1.875rem;
-    padding-top: 3.5rem;
+  .gallery-images {
+    --gap: 1.875rem;
+    padding: 3.5rem 0 1.5rem 0;
   }
 }
 
-.carousel-btns {
+.gallery-images > img {
+  block-size: 100%;
+  width: auto;
+}
+
+.gallery-btns {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 }
 @media (min-width: 43.125rem) {
-  .carousel-btns {
-    padding-top: 3.5rem;
+  .gallery-btns {
+    padding-top: 1rem;
   }
 }
 

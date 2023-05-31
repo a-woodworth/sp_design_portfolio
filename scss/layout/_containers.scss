@@ -60,9 +60,16 @@
   }
 }
 
-// Porfolio - Carousel
-.carousel-scroll-container {
+// Porfolio - Image Gallery
+.gallery {
+  overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  overflow-x: auto;
+  // Hide scrollbar Chrome, Edge, Safari
+  scrollbar-width: none;
+  
+  // Hide scrollbar Firefox
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }

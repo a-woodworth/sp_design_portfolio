@@ -68,38 +68,46 @@
           <a href="#" class="btn btn--secondary">Free Consultation</a>
         </div>
       </section>
-      <section class="portfolio full-bleed" aria-label="portfolio">
+      <section class="portfolio" aria-label="carousel with images">
         <h2 class="portfolio__title">My Work</h2>
-        <div class="carousel-scroll-container" role="region" aria-label="Image carousel" tabindex="0">
-          <ul class="carousel-media" role="list">
-            <li class="carousel-item">
+        <div class="gallery" role="region" aria-roledescription="carousel">
+          <p class="sr-only">This is a carousel with rotating images showing design work. Use the previous and next buttons to navigate.</p>
+          <div id="carousel-slider" class="gallery-images" data-js="slider" role="presentation" aria-live="polite" aria-atomic="true">
+            <div class="gallery-item active" aria-hidden="true" tabindex="-1" role="group">
+              <p class="sr-only">Image 1 of 5</p>
               <img src="assets/image-slide-1.jpg" alt="Motion graphics - Artistic snowflake floating on blue background">
-            </li>
-            <li class="carousel-item">
+            </div>
+            <div class="gallery-item" aria-hidden="true" tabindex="-1" role="group">
+              <p class="sr-only">Image 2 of 5</p>
               <img src="assets/image-slide-2.jpg" alt="Illustrations - Circular shapes on purple background">
-            </li>
-            <li class="carousel-item">
+            </div>
+            <div class="gallery-item active" tabindex="0" role="group">
+              <p class="sr-only">Image 3 of 5</p>
               <img src="assets/image-slide-3.jpg" alt="Graphic design - Newsletter with multi-color logo">
-            </li>
-            <li class="carousel-item">
+            </div>
+            <div class="gallery-item" aria-hidden="true" tabindex="-1" role="group">
+              <p class="sr-only">Image 4 of 5</p>
               <img src="assets/image-slide-4.jpg" alt="Photography - Books stacked on old vinyl records">
-            </li>
-            <li class="carousel-item">
+            </div>
+            <div class="gallery-item" aria-hidden="true" tabindex="-1" role="group">
+              <p class="sr-only">Image 5 of 5</p>
               <img src="assets/image-slide-5.jpg" alt="Apps - iPhone displaying Ben Kolde website">
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-        <div class="carousel-btns" aria-label="Carousel navigation controls">
-          <button class="btn btn--primary btn--carousel" 
+        <div class="gallery-btns">
+          <button class="btn btn--primary btn--gallery" 
             type="button" 
-            aria-label="Previous"
-            data-direction="start">
+            aria-controls="carousel-slider"
+            aria-label="Previous image"
+            data-js="previous">
             <img aria-hidden="true" src="assets/icon-arrow-left.svg" alt="">
           </button>
-          <button class="btn btn--primary btn--carousel" 
-            type="button" 
-            aria-label="Next"
-            data-direction="end">
+          <button class="btn btn--primary btn--gallery" 
+            type="button"
+            aria-controls="carousel-slider" 
+            aria-label="Next image"
+            data-js="next">
             <img aria-hidden="true" src="assets/icon-arrow-right.svg" alt="">
           </button>
         </div>
@@ -126,5 +134,6 @@
         </nav>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
