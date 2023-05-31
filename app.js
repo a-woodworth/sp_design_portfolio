@@ -2,9 +2,8 @@ const images = [...document.querySelectorAll('.gallery-item')];
 const slider = document.querySelector('[data-js="slider"]');
 const prevBtn = document.querySelector('[data-js="previous"]');
 const nextBtn = document.querySelector('[data-js="next"]');
-
-// Set centered image as default
-let currentImage = 2;
+const active = images.find(image => image.classList.contains('active'));
+let currentImage = images.indexOf(active); 
 
 function getSlidePosition() {
   const activeSlide = images[currentImage];
