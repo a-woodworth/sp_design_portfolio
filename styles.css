@@ -71,10 +71,8 @@ a {
   padding: 0.5rem 1.75rem;
   transition: 0.4s ease-in-out;
 }
-@media (hover: hover) {
-  .btn:hover {
-    background-color: var(--bg-blue);
-  }
+.btn:hover {
+  background-color: var(--bg-blue);
 }
 @media (min-width: 43.125rem) {
   .btn {
@@ -101,6 +99,11 @@ a {
   height: 4rem;
   padding: 1.5rem;
   width: 4rem;
+}
+@media (hover: hover) {
+  .btn--gallery:hover {
+    background-color: var(--bg-blue);
+  }
 }
 
 .container {
