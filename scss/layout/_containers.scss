@@ -65,11 +65,15 @@
   overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  // Hide scrollbar Chrome, Edge, Safari
+   // Hide scrollbar Firefox
   scrollbar-width: none;
   
-  // Hide scrollbar Firefox
+  // Hide scrollbar Chrome, Safari
   &::-webkit-scrollbar {
-    width: 0;
+    display: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
   }
 }

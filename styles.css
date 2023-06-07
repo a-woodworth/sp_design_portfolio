@@ -172,7 +172,12 @@ a {
   scrollbar-width: none;
 }
 .gallery::-webkit-scrollbar {
-  width: 0;
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery {
+    scroll-behavior: auto;
+  }
 }
 
 nav ul {
@@ -476,6 +481,11 @@ nav ul {
   .gallery-images {
     --gap: 1.875rem;
     padding: 3.5rem 0 1.5rem 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery-images {
+    transition: all 0.001s;
   }
 }
 
