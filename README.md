@@ -36,7 +36,7 @@ Users should be able to:
 ![Mobile Sceenshot](/screenshots/mobile-screenshot-375px.png)
 
 ### Links
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/singlepage-design-portfolio-flex-grid-and-javascript-uyTH970mTj)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/sp_design_portfolio/)
 
 ### Built with
