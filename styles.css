@@ -39,6 +39,7 @@ ul {
 
 img {
   display: block;
+  height: auto;
   max-width: 100%;
 }
 
@@ -60,7 +61,7 @@ a {
 
 .btn {
   border: none;
-  border-radius: 28px;
+  border-radius: 1.75rem;
   color: var(--secondary-color);
   cursor: pointer;
   display: block;
@@ -487,11 +488,6 @@ nav ul {
   .gallery-images {
     transition: all 0.001s;
   }
-}
-
-.gallery-images > img {
-  block-size: 100%;
-  width: auto;
 }
 
 .gallery-btns {
